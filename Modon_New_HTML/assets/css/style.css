@@ -1,4 +1,4 @@
-﻿/*, compress: true*/
+/*, compress: true*/
 @font-face {
   font-family: 'regfont';
   src: url("../fonts/TheSans-Plain.eot?#iefix") format("embedded-opentype"), url("../fonts/TheSans-Plain.woff") format("woff"), url("../fonts/TheSans-Plain.ttf") format("truetype"), url("../fonts/TheSans-Plain.svg#TheSans-Plain") format("svg");
@@ -4861,4 +4861,140 @@ em {
     padding-right: 0px;
     padding-top: 20px;
   }
+}
+.products-slider-wrapper {
+  position: relative;
+}
+.products-slider-wrapper .swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23399dc4'%2F%3E%3C%2Fsvg%3E");
+  right: -53px;
+  left: auto;
+  background-size: 27px 30px;
+}
+.products-slider-wrapper .swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23399dc4'%2F%3E%3C%2Fsvg%3E");
+  left: -53px;
+  right: auto;
+  background-size: 27px 30px;
+}
+.products-slider-wrapper .swiper-pagination {
+  bottom: -50px;
+  right: 0;
+  width: 100%;
+}
+.products-slider-wrapper .swiper-pagination .swiper-pagination-bullet {
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 40px;
+  height: 6px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #fff;
+  margin: 0 7px;
+  opacity: 1;
+}
+.products-slider-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 60px;
+  background-color: #8cc340;
+}
+.products-slider-wrapper .img-box {
+  height: 472px;
+}
+.products-slider-wrapper .img-box img {
+  width: 100%;
+  min-height: 100%;
+}
+.products-slider-wrapper .content-box {
+  background-color: #185a81;
+  text-align: center;
+  padding: 130px 22px 45px;
+  transition: 0.4s;
+  height: 472px;
+}
+.products-slider-wrapper .content-box .icon-box {
+  transition: inherit;
+}
+.products-slider-wrapper .content-box h2 {
+  color: #fff;
+  font-size: 32px;
+  line-height: 30px;
+  transition: inherit;
+}
+.products-slider-wrapper .content-box p {
+  color: #8cc340;
+  font-size: 14px;
+  line-height: 28px;
+  opacity: 0;
+  height: 0;
+  transition: 1s;
+}
+.products-slider-wrapper .content-box .detailsLnk {
+  float: none;
+  background-color: #8cc340;
+  color: #fff;
+  padding: 10px 30px 10px 70px;
+  display: inline-block;
+  transition: inherit;
+}
+.products-slider-wrapper .content-box .detailsLnk::before {
+  border-color: #fff;
+  left: 30px;
+  top: 11px;
+}
+.products-slider-wrapper .content-box .detailsLnk::after {
+  background-image: url('../images/white-more-arrow.svg');
+  left: 34px;
+  top: 16px;
+}
+.products-slider-wrapper .content-box .detailsLnk:hover::after {
+  left: 24px;
+}
+.products-slider-wrapper .content-box:hover .icon-box {
+  transform: translateY(-50px) scale(1.2);
+}
+.products-slider-wrapper .content-box:hover h2 {
+  transform: translateY(-23px);
+  color: #8cc340;
+}
+.products-slider-wrapper .content-box:hover p {
+  transform: translateY(-23px);
+  opacity: 1;
+  height: max-content;
+}
+.products-slider-wrapper .content-box:hover .detailsLnk {
+  transform: translateY(-10px);
+  padding: 10px 40px 10px 80px;
+}
+.all-products {
+  background-color: #F5F5F5;
+  background-image: url("../images/bg-art.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  padding-bottom: 127px;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.content-title {
+  font-weight: bold;
+  font-size: 45px;
+  color: #2D2D2D;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+.content-p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 36px;
+  line-height: 36px;
 }
