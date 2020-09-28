@@ -1,3 +1,9 @@
+//out: null
+
+@import "fonts.less";
+@import "variable.less";
+@import "mixins.less";
+
 .products-slider-wrapper {
   position: relative;
   .swiper-button-prev {
@@ -57,8 +63,10 @@
       font-size: 14px;
       line-height: 28px;
       opacity: 0;
-      height: 0;
-      transition: 1s;
+      // height: 0;
+      max-height: 60px;
+      overflow: hidden;
+      .trans(0.8s);
     }
     .detailsLnk {
       float: none;
@@ -66,7 +74,7 @@
       color: @whitecolor;
       padding: 10px 30px 10px 70px;
       display: inline-block;
-      transition: inherit;
+      .trans(0.8s);
       &::before {
         border-color: @whitecolor;
         left: 30px;
@@ -77,28 +85,29 @@
         left: 34px;
         top: 16px;
       }
-      &:hover {
-        &::after {
-          left: 24px;
-        }
-      }
     }
     &:hover {
       .icon-box {
         transform: translateY(-50px) scale(1.2);
+        &:after {
+          opacity: 1;
+        }
       }
       h2 {
         transform: translateY(-23px);
         color: @green;
       }
       p {
-        transform: translateY(-23px);
+        transform: translateY(-15px);
         opacity: 1;
         height: max-content;
       }
       .detailsLnk {
-        transform: translateY(-10px);
+        transform: translateY(5px);
         padding: 10px 40px 10px 80px;
+        &::after {
+          left: 20px;
+        }
       }
     }
   }
@@ -154,6 +163,7 @@ section.sub-products {
   margin-top: -160px;
 }
 .prod-card {
+  position: relative;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.15);
   text-align: center;
   padding: 18px 0 32px;
@@ -166,6 +176,11 @@ section.sub-products {
     height: 90px;
     img {
       height: 100%;
+    }
+    &:after {
+      width: 92px;
+      height: 31px;
+      margin: -15px auto 0;
     }
   }
   h2 {
@@ -198,6 +213,9 @@ section.sub-products {
     transform: scale(1.05);
     .icon-box {
       transform: translateY(-50px) scale(1.2);
+      &:after {
+        opacity: 1;
+      }
     }
     h2 {
       transform: translateY(-23px);
@@ -265,7 +283,7 @@ section.sub-products {
       display: block;
       position: relative;
       height: 360px;
-      transition: 0.3s;
+      .trans1;
       img {
         position: absolute;
         width: calc(100% - 25px);
@@ -273,6 +291,22 @@ section.sub-products {
         left: 0;
         top: 0;
         z-index: 2;
+        transition: inherit;
+      }
+      &:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.707' height='18.708' viewBox='0 0 18.707 18.708'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M11,6H9V9H6v2H9v3h2V11h3V9H11Z' transform='translate(-2 -2)'/%3E%3Cpath class='a' d='M10,2a8,8,0,1,0,4.9,14.313l4.4,4.395,1.414-1.414-4.4-4.4A7.986,7.986,0,0,0,10,2Zm0,14a6,6,0,1,1,6-6A6.006,6.006,0,0,1,10,16Z' transform='translate(-2 -2)'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        position: absolute;
+        left: calc(50% - 10px);
+        top: calc(50% - 10px);
+        z-index: 3;
+        transform: translate(-10px, -10px);
+        opacity: 0;
         transition: inherit;
       }
       &::after {
@@ -289,6 +323,9 @@ section.sub-products {
       &:hover {
         img {
           transform: translate(-10px, -10px);
+        }
+        &::before {
+          opacity: 1;
         }
         &::after {
           transform: translateY(5px);
@@ -375,7 +412,12 @@ section.sub-products {
       left: 0;
       right: 0;
       top: 130px;
-      transition: inherit;
+      .trans(0.6s);
+      &:after {
+        width: 92px;
+        height: 31px;
+        margin: -15px auto 0;
+      }
     }
     h3 {
       position: absolute;
@@ -399,6 +441,15 @@ section.sub-products {
       opacity: 0;
       transition: inherit;
       text-align: right;
+      li {
+        padding: 3px 0;
+        a {
+          color: inherit;
+          &:hover {
+            color: @bluecolor;
+          }
+        }
+      }
     }
     &:hover {
       background-color: #e9f9ff;
@@ -410,6 +461,9 @@ section.sub-products {
       .icon-box {
         transform: translateY(-80px) scale(1.2);
         top: 80px;
+        &:after {
+          opacity: 1;
+        }
       }
       h3 {
         color: @bluecolor;
@@ -547,6 +601,31 @@ section.sub-products {
       left: calc(50% - 178px / 2);
     }
   }
+}
+
+.icon-box {
+  &:after {
+    content: "";
+    display: block;
+    margin: -22px auto;
+    width: 138px;
+    height: 55px;
+    background: radial-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 60%);
+    opacity: 0;
+    .trans(0.4s);
+  }
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 1199px) {

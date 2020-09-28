@@ -1,0 +1,33 @@
+// out: null
+
+/*Mixins*/
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+.trans1 {
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.trans2 {
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.trans(@duration) {
+  -o-transition: all @duration ease;
+  -webkit-transition: all @duration ease;
+  -moz-transition: all @duration ease;
+  transition: all @duration ease;
+}
+.transprop(@prop) {
+  -o-transition: @prop 0.5s ease;
+  -webkit-transition: @prop 0.5s ease;
+  -moz-transition: @prop 0.5s ease;
+  transition: @prop 0.5s ease;
+}
+/*Mixins*/
