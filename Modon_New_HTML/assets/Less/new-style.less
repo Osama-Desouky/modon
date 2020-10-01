@@ -1,9 +1,14 @@
-//out: null
+// out: ../css/new-style.css, compress: false, sourceMap: false, autoprefixer: last 5 versions, groupmedia: true
 
 @import "fonts.less";
 @import "variable.less";
 @import "mixins.less";
 
+/*
+================================
+New Content Enhancements Css
+================================
+*/
 .products-slider-wrapper {
   position: relative;
   .swiper-button-prev {
@@ -51,6 +56,10 @@
     height: 472px;
     .icon-box {
       transition: inherit;
+      height: 105px;
+      img {
+        height: 100%;
+      }
     }
     h2 {
       color: @whitecolor;
@@ -160,15 +169,17 @@
   }
 }
 section.sub-products {
-  margin-top: -160px;
+  margin-top: -140px;
 }
 .prod-card {
+  display: flex;
+  flex-direction: column;
   position: relative;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.15);
   text-align: center;
-  padding: 18px 0 32px;
+  padding: 18px 10px 32px;
   transition: 0.4s;
-  height: 225px;
+  height: 235px;
   margin-bottom: 50px;
   background-color: #fff;
   .icon-box {
@@ -185,8 +196,8 @@ section.sub-products {
   }
   h2 {
     color: #555555;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 28px;
     transition: inherit;
     margin-top: 5px;
   }
@@ -196,7 +207,7 @@ section.sub-products {
     p {
       color: #666666;
       font-size: 14px;
-      line-height: 28px;
+      line-height: 1.5;
       opacity: 0;
       transition: inherit;
     }
@@ -206,6 +217,7 @@ section.sub-products {
     display: inline-block;
     margin-top: 15px;
     transition: inherit;
+    margin: auto auto 0;
   }
   &:hover {
     background-color: #e9f9ff;
@@ -605,6 +617,8 @@ section.sub-products {
 
 .icon-box {
   &:after {
+    position: relative;
+    z-index: -1;
     content: "";
     display: block;
     margin: -22px auto;
