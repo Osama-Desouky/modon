@@ -381,6 +381,9 @@ section.sub-products {
 .product-view.dark-mode .content p {
   color: #fff;
 }
+.product-view.no-expand {
+  padding-bottom: 66px !important;
+}
 .product-view .gallery-box .fancy {
   display: block;
   position: relative;
