@@ -639,7 +639,7 @@ section.sub-products {
   color: #555555;
   font-size: 20px;
   font-weight: bold;
-  padding: 10px 50px 14px;
+  padding: 10px 30px 14px;
   border: 1px solid #53b2da;
   border-radius: 0;
 }
@@ -652,6 +652,9 @@ section.sub-products {
 }
 .nav-pills.custom > li:last-child a {
   border-radius: 50px 0 0 50px;
+}
+.nav-pills.custom > li:not(:first-child) a {
+  border-right: 0;
 }
 .region-box {
   padding: 0 15px;

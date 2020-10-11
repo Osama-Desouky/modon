@@ -513,7 +513,7 @@ section.sub-products {
       color: #555555;
       font-size: 20px;
       font-weight: bold;
-      padding: 10px 50px 14px;
+      padding: 10px 30px 14px;
       border: 1px solid #53b2da;
       border-radius: 0;
     }
@@ -531,6 +531,11 @@ section.sub-products {
     &:last-child {
       a {
         border-radius: 50px 0 0 50px;
+      }
+    }
+    &:not(:first-child) {
+      a {
+        border-right: 0;
       }
     }
   }
