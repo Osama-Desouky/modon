@@ -20,4 +20,11 @@ $(document).ready(function () {
       wrapper.fadeOut();
     });
   });
+
+  // Animate on Scroll function call
+  AOS.init({
+    duration: 600,
+    easing: "linear",
+    once: true,
+  });
 });
