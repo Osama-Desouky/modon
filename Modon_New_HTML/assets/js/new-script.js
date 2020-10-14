@@ -1,5 +1,15 @@
 $(document).ready(function () {
   var productsSlider = new Swiper(".products-slider", {
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 45,
+      slideShadows: false,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

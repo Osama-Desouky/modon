@@ -62,25 +62,26 @@ New Content Enhancements Css
       }
     }
     h2 {
-      color: @whitecolor;
-      font-size: 32px;
-      line-height: 30px;
-      transition: inherit;
+      color: @whitecolor!important;
+      font-size: 32px !important;
+      line-height: 30px !important;
+      transition: inherit !important;
     }
     p {
-      color: @green;
-      font-size: 14px;
-      line-height: 28px;
+      color: @green!important;
+      font-size: 14px !important;
+      line-height: 28px !important;
       opacity: 0;
+      text-align: center;
       // height: 0;
-      max-height: 60px;
-      overflow: hidden;
-      .trans(0.8s);
+      max-height: 60px !important;
+      overflow: hidden !important;
+      .trans(0.8s) !important;
     }
     .detailsLnk {
       float: none;
       background-color: @green;
-      color: @whitecolor;
+      color: @whitecolor!important;
       padding: 10px 30px 10px 70px;
       display: inline-block;
       .trans(0.8s);
@@ -147,10 +148,10 @@ New Content Enhancements Css
   margin-bottom: 32px;
 }
 .content-p {
-  font-size: 16px;
-  color: #666666;
-  margin-bottom: 36px;
-  line-height: 36px;
+  font-size: 16px !important;
+  color: #666666 !important;
+  margin-bottom: 36px !important;
+  line-height: 36px !important;
 }
 .product-details {
   background-color: #f5f5f5;
@@ -249,10 +250,8 @@ section.sub-products {
   overflow: hidden;
 }
 .product-view {
-  padding-top: 74px;
   padding-bottom: 66px;
   .content {
-    padding-top: 76px;
     margin-bottom: 30px;
     h2 {
       font-size: 28px;
@@ -263,6 +262,13 @@ section.sub-products {
     p {
       font-size: 15px;
       line-height: 36px;
+    }
+  }
+  @media (min-width: 800px) {
+    // padding-top: 10px;
+    padding-top: 70px;
+    .content {
+      padding-top: 76px;
     }
   }
   &.light-mode {
@@ -276,17 +282,21 @@ section.sub-products {
     }
   }
   &.dark-mode {
-    background-color: #266891;
-    background-image: url("../images/bg-art.png");
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    padding-bottom: 0;
+    background-color: #266891 !important;
+    background-image: url("../images/bg-art.png") !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+    padding-bottom: 0 !important;
+    color: @whitecolor!important;
     .content {
       h2 {
-        color: @whitecolor;
+        color: @whitecolor!important;
       }
       p {
-        color: @whitecolor;
+        color: @whitecolor!important;
+      }
+      * {
+        color: inherit !important;
       }
     }
   }
@@ -307,6 +317,7 @@ section.sub-products {
         top: 0;
         z-index: 2;
         transition: inherit;
+        background-color: #666;
       }
       &:before {
         content: "";
@@ -354,14 +365,16 @@ section.sub-products {
     border: 2px solid #52b2db;
     border-radius: 50px;
     padding: 14px 15px 0;
-    text-align: center;
+    text-align: center !important;
     margin-top: 67px;
     margin-bottom: 69px;
     transition: 0.3s;
+    cursor: pointer;
     p {
       margin: 0;
       font-size: 18px;
       font-weight: bold;
+      text-align: center !important;
       color: #555555;
       transition: inherit;
     }
@@ -399,6 +412,7 @@ section.sub-products {
   .slide-wrapper {
     display: none;
     background-color: #fff;
+    position: relative;
     .slide-close {
       display: block;
       background-image: url("../images/close.svg");
@@ -412,6 +426,21 @@ section.sub-products {
       &:hover {
         background-image: url("../images/close-hover.svg");
       }
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 3000px;
+      left: -50%;
+      bottom: -10px;
+      top: -50px;
+      background: #fff;
+      z-index: -1;
+    }
+    .tab-content:after {
+      content: "";
+      display: block;
+      clear: both;
     }
   }
   .area {
@@ -491,6 +520,11 @@ section.sub-products {
     }
   }
 }
+.dark-mode {
+  .entry-p {
+    color: @whitecolor!important;
+  }
+}
 .entry-p {
   text-align: center;
   font-size: 15px;
@@ -505,7 +539,11 @@ section.sub-products {
   margin-top: 50px;
   margin-bottom: 86px;
   font-size: 0;
+  padding: 0;
   > li {
+    &:before {
+      display: none !important;
+    }
     float: none;
     display: inline-block;
     margin: 0;
@@ -565,7 +603,7 @@ section.sub-products {
       flex-direction: column;
       justify-content: center;
       h3 {
-        font-size: 29px;
+        font-size: 25px;
         line-height: 35px;
         text-align: center;
         font-weight: bold;
@@ -667,4 +705,7 @@ section.sub-products {
     font-size: 12px;
     padding: 10px 10px 14px;
   }
+}
+.breadCrumbFunctions {
+  left: -85px;
 }
