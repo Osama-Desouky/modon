@@ -48,7 +48,7 @@ jQuery('.timeline').timeline({
     horizontalStartPosition:'top',
     moveItems: 2,
     startIndex: 0,
-    rtlMode: true
+    // rtlMode: true
 
   });
   
