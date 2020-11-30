@@ -52,3 +52,14 @@ jQuery('.timeline').timeline({
 
   });
   
+  function showMoreContent(){
+    $('.toggle-content').toggleClass('show-More-Content');
+    $('.nabza').toggleClass('auto-Height');
+    $('.detailsLnk').addClass('hide-me');
+  }
+  function hideMoreContent(){
+    $('.toggle-content').toggleClass('show-More-Content');
+    $('.nabza').toggleClass('auto-Height');
+    $('.detailsLnk').removeClass('hide-me');
+
+  }

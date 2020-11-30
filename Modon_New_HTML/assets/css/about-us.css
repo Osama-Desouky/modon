@@ -171,7 +171,7 @@
 }
 .content-margin{
     margin-top: 55px;
-    margin-bottom: 88px;
+    /* margin-bottom: 88px; */
 }
 .nabza .nabza-content h2{
     color: #ffffff !important;
@@ -184,6 +184,7 @@
     font-size: 15px !important;
     color: #ffffff !important;
     margin-bottom: 25px !important;
+    line-height: 36px;
 }
 .nabza .nabza-content .detailsLnk {
     float: none;
@@ -195,6 +196,7 @@
     -webkit-transition: all 0.8s ease;
     transition: all 0.8s ease;
     box-shadow: -4px 4px 0px #00000040;
+    cursor: pointer;
 }
 .nabza .nabza-content .detailsLnk::before {
     border-color: #fff;
@@ -223,6 +225,54 @@
 }
 .nabza .gallery-box .fancy::before{
     display: none;
+}
+.toggle-content{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 36px;
+    padding-top: 15px;
+    display: none;
+    animation: fadeIn ease 1.5s;
+     -webkit-animation: fadeIn ease 1.5s;
+   -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+    margin-bottom: 10px;
+}
+.toggle-content a {
+    display: block;
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    margin-top: 40px;
+}
+.hide-me{
+    display: none !important;
+}
+.show-More-Content{
+    display: block !important;
+}
+.auto-Height{
+    height: auto !important;
+    
+}
+.NEWWWWW{
+    animation: fadeIn ease 1.5s;
+     -webkit-animation: fadeIn ease 1.5s;
+   -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+
+.product-view .area:hover{
+    height: auto !important;
+    min-height: 430px;
 }
 /* timeline section styles */
 .horizontal-swiperTimeline{
@@ -371,6 +421,145 @@ height: 75px;
 right: 65%;
 }
 
+
+/*  */
+/*  */
+/* modon lake page */
+/*  */
+.madan-lake .content{
+    padding-top: 30px;
+}
+.madan-lake .content h2{
+    margin-bottom: 20px;
+}
+.madan-lake .content p {
+    font-size: 16px;
+}
+.madan-lake .content .horizontal-line{
+    right: auto;
+}
+.madan-lake .gallery-box .fancy {
+    height: 336px;
+}
+.lake-description{
+    margin-top: 50px;
+}
+.lake-description p{
+    line-height: 36px;
+}
+.go-to-lake .prod-card{
+height: 224px;
+}
+
+
+.go-to-lake .prod-card h2{
+    margin-top: 50px;
+
+}
+
+/*  */
+/* Community-Responsibility */
+/*  */
+.Community-Responsibility .main-paragraph{
+font-size: 15px;
+}
+.Community-Responsibility .horizontal-line{
+    right: auto;
+}
+.Community-Responsibility h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.Community-Responsibility .content p {
+    font-size: 16px;
+}
+.Community-Responsibility .gallery-box .fancy {
+    height: 450px;
+}
+.more-padding .content{
+    padding-top: 170px;
+}
+
+.environment{
+    margin-bottom: 50px !important;
+}
+.p50{
+    padding-bottom: 25px !important;
+    padding-top: 25px !important;
+}
+.agreement{
+    padding-top: 6px !important;
+}
+/* healthy section */
+.healthy {
+    background-image: url(../images/responsibility/healthy-bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    padding-top: 40px;
+    padding-bottom: 65px;
+}
+.healthy h2{
+    margin-bottom: 47px;
+}
+.reverse-shadow .gallery-box .fancy img{
+left: auto;
+right: 0;
+}
+.reverse-shadow .gallery-box .fancy::after{
+    right: auto;
+    left: 0;
+}
+.reverse-shadow .gallery-box .fancy:hover img{
+    transform: translate(10px, -10px);
+}
+
+/* enviro */
+.environment-sec{
+    background-image: url(../images/env/envart.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    padding-top: 90px;
+    padding-bottom: 65px;
+}
+.enviro-video .horizontal-line{
+    right: auto;
+    width: 100px;
+}
+.environment-sec p {
+    line-height: 36px;
+}
+.environment-sec .content{
+padding-top: 0;
+margin-bottom :10px
+}
+.environment-sec .content h2{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.environment-sec .last-p{
+    margin-top: 20px;
+}
+.smoke{
+    background-image: url(../images/responsibility/healthy-bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+.smoke .content{
+    padding-top: 5px;
+}
+.tree{
+    background-image: url(../images/responsibility/healthy-bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
 /*  meeeeeeeeeeeeeeeeeedia */
 @media (min-width: 800px){
     .our-scene{
@@ -380,9 +569,12 @@ right: 65%;
     .tabs-sec{
         padding-top: 100px;
     }
+    .more-padding{
+        padding-top: 52px;
+    }
 }
 
-@media (max-width: 1199px){
+@media (max-width: 1200px){
     .about-us .about-content span.gray-point::after {
         height: 170px;
         top: -170px;
@@ -418,7 +610,7 @@ right: 65%;
 }
 
 
-@media (max-width: 991px){
+@media (max-width: 992px){
     .horizontal-line {
         width: 75px;
         right: 50%;
@@ -478,10 +670,44 @@ right: 65%;
     .newsletterfrom {
         margin-top: 40px;
     }
+    .content-margin{
+        /* margin-top: 55px; */
+        margin-bottom: 88px;
+    }
+    .environment-sec .content h2{
+        margin-top: 20px;
+    }
+    .reverse-shadow{
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .Community-Responsibility .content{
+        padding-top: 40px;
+    }
+    .Community-Responsibility .main-paragraph{
+        margin-top: 20px;
+    }
+    .Community-Responsibility h2{
+        font-size: 28px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .Community-Responsibility .content h2{
+        margin-bottom: 10px;
+    }
+    .agreement .content{
+        padding-top: 0;
+    }
+    .p50 {
+        /* padding-bottom: 0 !important; */
+        padding-top: 0 !important;
+    }
+    
+
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     .with-video{
         padding-top: 20px;
     }
@@ -514,8 +740,12 @@ right: 65%;
 .nabza .nabza-content h2 {
     font-size: 22px !important;
 }
+.toggle-content {
+    line-height: 22px;
+}
 .nabza .nabza-content p {
     font-size: 13px !important;
+    line-height: 22px;
 }
     .nabza .nabza-content h2 .horizontal-line {
         right: 35%;
@@ -525,6 +755,19 @@ right: 65%;
     }
     .header-content {
         font-size: 22px;
+    }
+
+    .environment-sec p{
+        font-size: 13px;
+    }
+    .Community-Responsibility .main-paragraph{
+        font-size: 13px;
+    }
+    .lake-description {
+        margin-top: 30px;
+    }    
+    p {
+        font-size: 13px ;
     }
 }
 @media (max-width: 670px){
