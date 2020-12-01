@@ -68,7 +68,17 @@
     height: 2px;
     margin-left: 20px;
 }
+.with-video .horizontal-line{
+    position: absolute;
+    width: 20% !important;
+    top: 20px !important;
+    right: -80px !important;
+    left: auto !important;
+    height: 2px;
+    margin-right: 0px !important;
+}
 .with-video .content h2{
+    width: 80% !important;
     font-size: 25px;
 }
 .with-video .content p {
@@ -745,7 +755,13 @@ margin-bottom :10px
         padding-top: 0 !important;
     }
     
-
+    /* .health-about p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .health .health-about .health-about-content::after{
+        height: 145px;
+    } */
 }
 
 
@@ -816,6 +832,9 @@ margin-bottom :10px
     }
     .horizontal-line{
         display: none !important;
+    }
+    .with-video .content h2{
+        width: 100% !important;
     }
 }
 

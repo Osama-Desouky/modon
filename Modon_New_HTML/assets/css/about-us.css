@@ -87,7 +87,18 @@
     height: 2px;
     margin-right: 20px;
 }
-
+.with-video .horizontal-line{
+    position: absolute;
+    width: 20% !important;
+    top: 20px !important;
+    left: -80px !important;
+    right: auto !important;
+    height: 2px;
+    margin-right: 0px !important;
+}
+.with-video .content h2{
+    width: 80% !important;
+}
 .with-video .gallery-box .fancyVid{
     /* max-height: 400px; */
     height: 400px;
@@ -560,6 +571,210 @@ margin-bottom :10px
     padding-top: 60px;
     padding-bottom: 25px;
 }
+
+/*  */
+/* health page */
+/*  */
+.health .health-about{
+    margin-top: 34px;
+}
+.health .health-about .health-about-content{
+    /* display: inline; */
+    position: relative;
+    min-height: 106px;
+}
+
+.health-about p{
+    padding-right: 55px;
+    padding-left: 8px;
+    line-height: 36px;
+}
+.health .health-about .health-about-content::before{
+    content: "";
+    border-radius: 50px;
+    background: #EBEBEB;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+.health .health-about .health-about-content::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 140px;
+    position: absolute;
+    top: -127px;
+    background: #EBEBEB;
+    right: 7px;
+}
+.first-one .health-about-content::after{
+    display: none !important;
+}
+.saftey-visits{
+    background-image: url(../images/bg-art88.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    padding-top: 78px;
+    padding-bottom: 70px;
+}
+.saftey-visits .choose-one{
+background-color: #ffffff;
+box-shadow: 0px 0px 45px #00000015;
+margin-right: 30px;
+}
+.saftey-visits .choose-one ul {
+    padding: 20px ;
+}
+.saftey-visits .choose-one ul li{
+    margin: 10px 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+.saftey-visits .choose-one ul li a{
+    color: #555555 !important;
+    position: relative;
+    font-size: 18px;
+    text-align: right;
+}
+.saftey-visits .choose-one ul li.active a{
+   color: #266891 !important;
+   font-size: 20px;
+   font-weight: bold;
+}
+.nav-tabs > li.active:after{
+    display: none !important;
+}
+.saftey-visits .choose-one ul li.active a::before{
+    content: "";
+    position: absolute;
+    background-color: #92C841;
+    height: 2px;
+    width: 95px;   
+    top: 20px;
+    right: -83px
+
+}
+.saftey-visits .saftey-content::before{
+    content: "";
+    background-image: url(../images/Security-check.svg);
+    width: 56px;
+    height: 65px;
+    position: absolute;
+    right: 0;
+
+}
+.saftey-visits .saftey-content{
+padding-right: 70px;
+}
+.saftey-visits .saftey-content h2{
+font-size: 28px;
+margin-top: 5px;
+}
+.saftey-visits .saftey-content p{
+line-height: 36px;
+margin-bottom: 20px;
+padding-left: 25px;
+}
+.saftey-visits .saftey-content strong{
+    font-size: 18px;
+    color: #55B6DC;
+}
+.lstGreenNo .first-one span::after{
+    display: none !important
+}
+/*  */
+/* health and food */
+/*  */
+.no-background{
+    background: #ffffff;
+}
+.saftey-visits .content{
+    background: #ffffff;
+    padding: 37px 48px;
+}
+.saftey-visits .horizontal-line{
+    right: auto;
+}
+.saftey-visits .content h2{
+    font-size: 28px;
+}
+
+.saftey-visits .content .lstGreenNo .lstGreenNoItem span{
+    content: "";
+    border-radius: 50px;
+    background: #EBEBEB;
+    width: 16px;
+    height: 16px;
+    vertical-align: sub;
+}
+.saftey-visits .content .lstGreenNo .lstGreenNoItem span:after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    position: absolute;
+    top: -78px;
+    background: #EBEBEB;
+    right: 7px;
+}
+.saftey-visits .content .lstGreenNo .lstGreenNoItem{
+    overflow: inherit;
+    height: 80px;
+    color: #777777;
+    line-height: 36px;
+}
+.tabs-hed{
+    width: 30%;
+    float: left;
+}
+.tabs-cont{
+    width: 70%;
+    float: right;
+}
+.tabs-cont p {
+    padding-left: 50px;
+    line-height: 36px;
+}
+.saftey-visits .product-view .slide-toggle{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    padding: 14px 15px ;
+}
+.saftey-visits .product-view .slide-toggle::after {
+    position: absolute;
+    left: 40%;
+    top: 25px;
+    margin: 0;
+
+}
+.saftey-visits .product-view .slide-toggle:hover::before, .product-view .slide-toggle.active::before {
+    background-image: url(../images/down-arrow-hover.svg);
+    width: 20px;
+    height: 15px;
+}
+.saftey-visits .product-view .slide-toggle::before {
+    content: "";
+    width: 15px;
+    height: 8px;
+    display: inline-block;
+    background-image: url(../images/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    position: absolute;
+    right: 40%;
+    top: 25px;
+}
+.saftey-visits .product-view .slide-toggle.active{
+    display: none !important
+}
 /*  meeeeeeeeeeeeeeeeeedia */
 @media (min-width: 800px){
     .our-scene{
@@ -702,8 +917,37 @@ margin-bottom :10px
         /* padding-bottom: 0 !important; */
         padding-top: 0 !important;
     }
-    
-
+    .health-about p {
+        font-size: 13px;
+        line-height: 28px;
+    }
+    .health .health-about .health-about-content::after{
+        height: 145px;
+    }
+    .saftey-visits .choose-one ul li{
+        width: 100%;
+    }
+    .saftey-visits .choose-one ul li a{
+        font-size: 15px;
+    }
+    .saftey-visits .choose-one ul li.active a{
+        font-size: 17px;
+     }
+     .saftey-visits .saftey-content h2 {
+        font-size: 22px;
+    }
+    .saftey-visits .saftey-content p{
+        line-height: 28px;
+    }
+    .saftey-visits .saftey-content strong{
+        font-size: 15px;
+    }
+.saftey-visits .saftey-content {
+    padding-right: 75px;
+}
+.saftey-visits .saftey-content::before {
+    right: 20px;
+}
 }
 
 
@@ -773,6 +1017,9 @@ margin-bottom :10px
 @media (max-width: 670px){
     .horizontal-line{
         display: none !important;
+    }
+    .with-video .content h2{
+        width: 100% !important;
     }
 }
 @media (max-width: 600px){
