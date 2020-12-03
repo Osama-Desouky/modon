@@ -684,9 +684,9 @@ margin-left: 20px;
     position: absolute;
     background-color: #92C841;
     height: 2px;
-    width: 95px;   
+    width: 85px;
     top: 20px;
-    left: -83px
+    left: -70px;
 
 }
 .saftey-visits .saftey-content::before{
@@ -949,6 +949,57 @@ padding-right: 25px;
 .saftey-visits .slide-lists .content .lstGreenNo .lstGreenNoItem span {
     margin-top: 15px;
 }
+
+
+/*  */
+/* edit */
+/*  */
+.greyDots-before ul{
+    list-style: none;
+    padding-left: 55px;
+    padding-right: 8px;
+}
+
+.greyDots-before ul li {
+    list-style: none!important;
+    color: #666666;
+    font-size: 16px;
+    position: relative;
+    line-height: 28px;
+    padding-bottom: 35px;
+    min-height: 160px;
+}
+.greyDots-before ul li::before{
+    content: "";
+    border-radius: 50px;
+    background: #EBEBEB;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+    position: absolute;
+    left: -45px;
+}
+.greyDots-before ul li::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 140px;
+    position: absolute;
+    top: 24px;
+    background: #EBEBEB;
+    left: -38px;
+    height: 100%;
+}
+.greyDots-before ul li:last-child{
+    min-height: 50px;
+}
+.greyDots-before ul li:last-child::after{
+/* .no-line ul li::after{ */
+    display: none;
+}
+
+
 
 /*  meeeeeeeeeeeeeeeeeedia */
 @media (min-width: 800px){
@@ -1231,6 +1282,32 @@ padding-right: 25px;
     .saftey-visits .content .lstGreenNo .lstGreenNoItem{
         font-size: 12px;
     }
+
+     /* fix for page vertical scroll on small devices */
+     .inner-container{
+        overflow-x: hidden;
+      }
+
+      .saftey-visits .choose-one {
+          overflow-x: scroll
+      }
+      .saftey-visits .choose-one ul {
+          padding: 0;
+          width: max-content;
+          margin-bottom: 0;
+      }
+      .saftey-visits .choose-one ul li {
+          width: max-content;
+      }
+      .saftey-visits .choose-one ul li.active a::before {
+          width: 2px;
+          height: 40px;
+          top: 35px;
+          right: 40%;
+      }
+      .tab-content{
+          padding-top: 35px;
+      }
 }
 @media (max-width: 670px){
     .timeline__content p {

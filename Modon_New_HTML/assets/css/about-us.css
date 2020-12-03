@@ -918,6 +918,103 @@ padding-left: 25px;
 .saftey-visits .slide-lists .content .lstGreenNo .lstGreenNoItem span {
     margin-top: 15px;
 }
+
+.loan .gallery-box .fancyVid{
+    height: 400px;
+}
+.loan .content {
+    padding-top: 25px;
+}
+.card-view-change .prod-card{
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    height: 118px;
+}
+.card-view-change .prod-card .icon-box{
+    top: -13px;
+    position: relative;
+    margin-left: 10px;
+    height: auto;
+}
+.card-view-change .prod-card:hover .icon-box {
+    -webkit-transform: translateY(-10px) scale(1.2);
+    -ms-transform: translateY(-10px) scale(1.2);
+    transform: translateY(-10px) scale(1.2);
+}
+.card-view-change .prod-card:hover h2 {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateX(-10px);
+}
+.card-view-change .prod-card h2::after{
+   content: "";
+   background-image: url(../images/left-arrow.svg);
+   background-repeat: no-repeat;
+   position: absolute;
+   left: -11%;
+   top: 20%;
+   width: 7px;
+   height: 15px;
+}
+.card-view-change .prod-card:hover h2::after {
+    background-image: url(../images/left-arrow-hover.svg);
+   background-repeat: no-repeat;
+   -webkit-transform: translateX(-3px) scale(1.2);
+   -ms-transform: translateX(-3px) scale(1.2);
+   transform: translateX(-3px) scale(1.2);
+}
+
+/*  */
+/* edit */
+/*  */
+.greyDots-before ul{
+    list-style: none;
+    padding-right: 55px;
+    padding-left: 8px;
+}
+
+.greyDots-before ul li {
+    list-style: none!important;
+    color: #666666;
+    font-size: 16px;
+    position: relative;
+    line-height: 36px;
+    padding-bottom: 35px;
+    min-height: 160px;
+}
+.greyDots-before ul li::before{
+    content: "";
+    border-radius: 50px;
+    background: #EBEBEB;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+    position: absolute;
+    right: -45px;
+}
+.greyDots-before ul li::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 140px;
+    position: absolute;
+    top: 24px;
+    background: #EBEBEB;
+    right: -38px;
+    height: 100%;
+}
+.greyDots-before ul li:last-child{
+    min-height: 50px;
+}
+.greyDots-before ul li:last-child::after{
+/* .no-line ul li::after{ */
+    display: none;
+}
+
+
+
 /*  meeeeeeeeeeeeeeeeeedia */
 @media (min-width: 800px){
     .our-scene{
@@ -1213,6 +1310,32 @@ left: 33%;
     .saftey-visits .main-h2 {
         font-size: 22px;
     }
+
+    /* fix for page vertical scroll on small devices */
+        .inner-container{
+          overflow-x: hidden;
+        }
+
+        .saftey-visits .choose-one {
+            overflow-x: scroll
+        }
+        .saftey-visits .choose-one ul {
+            padding: 0;
+            width: max-content;
+            margin-bottom: 0;
+        }
+        .saftey-visits .choose-one ul li {
+            width: max-content;
+        }
+        .saftey-visits .choose-one ul li.active a::before {
+            width: 2px;
+            height: 40px;
+            top: 35px;
+            right: 40%;
+        }
+        .tab-content{
+            padding-top: 35px;
+        }
 }
 @media (max-width: 670px){
     .horizontal-line{
