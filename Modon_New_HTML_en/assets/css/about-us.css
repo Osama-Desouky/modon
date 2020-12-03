@@ -1303,7 +1303,7 @@ padding-right: 25px;
           width: 2px;
           height: 40px;
           top: 35px;
-          right: 40%;
+          left: 40%;
       }
       .tab-content{
           padding-top: 35px;
