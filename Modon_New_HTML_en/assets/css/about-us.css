@@ -1073,10 +1073,11 @@ padding-right: 25px;
 /* e-service */
 
 .e-service .prod-card:hover .p-wrapper{
-    height: auto !important;
+    height: 50px;
+    overflow: hidden;
 }
-.e-service .prod-card:hover{
-    height: auto !important;
+.e-service .prod-card{
+    height: 250px;
 }
 .e-service .prod-card:hover .detailsLnk:after{
     right: -9px;
