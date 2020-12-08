@@ -1102,6 +1102,204 @@ padding-right: 25px;
     -ms-transform: translateY(5px);
     transform: translateY(5px);
 }
+
+
+/* e-service details */
+.shereek{
+    background-image: url(../images/bg-nabza.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #266891;
+    height: 507px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+.shereek .shereek-content h2{
+    font-size: 35px;
+    color: #ffffff;
+}
+.shereek .shereek-content h3{
+    color: #92C841;
+}
+.shereek .shereek-content p{
+    font-size: 15px;
+    line-height: 28px;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+.shereek .gallery-box .shereek-image{
+    width: 100%;
+    height: 220px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    box-shadow: 16px -17px 5px #00000040
+}
+.shereek .shereek-content a{
+    float: none;
+    background-color: #fff;
+    color: #266891!important;
+    padding: 10px 70px 10px 30px;
+    display: inline-block;
+    -o-transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    box-shadow: -4px 4px 0px #00000040;
+    cursor: pointer;
+}
+.shereek .shereek-content a::before{
+    right: 30px;
+    top: 11px;
+}
+.shereek .shereek-content a::after{
+    right: 34px;
+    top: 16px;
+}
+.shereek .shereek-content .detailsLnk:hover:after {
+    right: 16px;
+}
+.system-goals .content {
+    padding: 0;
+}
+.system-goals .greyDots-before ul{
+margin-top: 40px;
+}
+.Dealers .main-dealer-header{
+    font-size: 28px;
+    margin-bottom: 135px;
+}
+.Dealers-content{
+    display: inline-block;
+    margin-left: 30px;
+}
+.Dealers-content p {
+    display: inline-block;
+    padding: 0 30px;
+    border-right: 1px solid #EBEBEB;
+}
+.Dealers-content:last-child p{
+    border-left: none;
+}
+
+.timing h2{
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.timing-content{
+  border: 2px solid #B0BFC8;
+  border-radius: 56px;
+  display: inline-block;
+  padding: 15px 55px 15px 15px;
+}
+.timing-content p {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.tanfez-5edma h2{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+.tanfez-5edma ul {
+    display: flex;
+    justify-content: center;
+}
+.tanfez-5edma ul li {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    position: relative;
+}
+.tanfez-5edma ul li p{
+    margin-top: 20px;
+}
+.tanfez-5edma ul li::before {
+    content: "";
+    width: 80%; 
+    position: absolute;
+    top: 40%;
+    left: 72%;
+    border-top: 1px dashed #C7C7C7;
+}
+.tanfez-5edma ul li::after {
+    content: "";
+    background-image: url(../images/e-service-details/left-arrow2.svg);
+    transform: rotate(180deg);
+    position: absolute;
+    top: 37.5%;
+    right: 0;
+    width: 6px;
+    height: 12px;
+}
+.tanfez-5edma .tanfez-5edma-video .gallery-box .fancyVid {
+    height: 507px;
+}
+.tanfez-5edma ul li:last-child::after , .tanfez-5edma ul li:last-child::before {
+    display: none
+}
+.swiper-section{
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 45px #00000015;
+    position: sticky;
+    top: 62px;
+    left: 0;
+    right: 0;
+    z-index: 19;
+}
+.swipee-container {
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-slide{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.swiper-slide  a.active::after{
+    border-bottom: 3px solid #92C841;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.swiper-slide a{
+    text-align: center;
+    font-size: 18px;
+    color: #555555;
+}
+.swiper-slide a.active {
+    font-size: 20px;
+    font-weight: bold;
+    color: #266891;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background-image: url(../images/e-service-details/swipe-left-arr.svg);
+    left: 10.7%;
+    top: 55%;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background-image: url(../images/e-service-details/swipe-right-arr.svg);
+     right: 10.7%;
+     top: 55%;
+}
+.accelerator-bar-container.sticky {
+    position: relative;
+    padding-top: 100px !important;
+}
+.accelerator-bar-container .swiper-section.sticky {
+    z-index: 99;
+    position: fixed;
+    padding: 0;
+    background: #fff;
+}
+
 /*  meeeeeeeeeeeeeeeeeedia */
 @media (min-width: 800px){
     .our-scene{
@@ -1113,6 +1311,15 @@ padding-right: 25px;
     }
     .more-padding{
         padding-top: 52px;
+    }
+}
+
+@media(max-width:1450px){
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+        left: 5%;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+        right: 5%;
     }
 }
 
@@ -1157,6 +1364,10 @@ padding-right: 25px;
     .timeline-header .second-line {
         right: 65%;
         left: auto;
+    }
+
+    .tanfez-5edma ul li::before {
+        left: 76%;
     }
 }
 
@@ -1311,6 +1522,41 @@ padding-right: 25px;
         font-size: 15px !important;
         line-height: 25px !important;
     }
+
+    .shereek{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .swiper-slide a.active{
+        font-size: 15px;
+    }
+    .swiper-slide a{
+        font-size: 13px;
+    }
+    .shereek .shereek-content h2 {
+        font-size: 25px;
+    }
+    .shereek .shereek-content p , .tanfez-5edma ul li p , .timing-content p {
+        font-size: 13px;
+        line-height: 28px;
+    }
+    .saftey-visits .content h2 ,
+    .Dealers .main-dealer-header ,
+    .system-goals .content h2 ,
+    .tanfez-5edma h2 ,
+    .timing h2{
+        font-size: 23px;
+    }
+    .system-goals .greyDots-before ul li{
+        font-size: 13px;
+    }
+    .timing-content {
+        padding: 7px 40px 8px 10px ;
+        margin-bottom: 25px;
+    }
+    .tanfez-5edma ul li::before {
+        left: 84%;
+    }
 }
 
 
@@ -1432,6 +1678,20 @@ padding-right: 25px;
     }
     .saftey-visits .product-view .slide-toggle::before ,.saftey-visits .product-view .slide-close::before{
         right: 20%;
+    }
+
+    .tanfez-5edma ul {
+        display: block;
+    }
+    .tanfez-5edma ul li {
+        width: 100%;
+    }
+    .tanfez-5edma ul li::before , .tanfez-5edma ul li::after{
+        display: none
+    }
+    .Dealers-content p{
+        padding: 0px 10px;
+        border: none;
     }
 }
 @media (max-width: 670px){
