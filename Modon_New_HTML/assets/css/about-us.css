@@ -1264,7 +1264,9 @@ margin-top: 40px;
 }
 .accelerator-bar-container .swiper-section.sticky {
     z-index: 99;
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
+    position: -webkit-sticky;
     padding: 0;
     background: #fff;
 }
@@ -1676,6 +1678,9 @@ left: 33%;
         .Dealers-content p{
             padding: 0px 10px;
             border: none;
+        }
+        .inner-container-noOverFlow{
+            overflow-x: visible !important ;
         }
 }
 @media (max-width: 670px){

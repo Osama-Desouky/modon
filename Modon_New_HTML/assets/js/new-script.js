@@ -69,7 +69,6 @@ var mySwiper = new Swiper('.swipee-container', {
     prevEl: '.swiper-button-prev',
   },
 
-  
 })
 
 // animation when click 
@@ -93,60 +92,16 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
   // animated top scrolling
   $('body, html').animate({scrollTop: pos  - 175 }, 'slow');
-  // $('html, body').animate({ scrollTop: $(sectionID).offset().top - 175 }, 'slow');
 
-// if ($('.our-slider-ul').length) { 
-//     $('.our-slider-ul a').on('click', function (e) { e.preventDefault(); 
-// if (!$(this).hasClass('active')) 
-//   { var sectionID = $(this).attr('href');
-//    scrollToSection(sectionID); } }); 
-// }
 
 });
 
-// onscroll change tabs 
-/////////////////////////////////////////
-// function onScroll(event){
-//   var scrollPos = $(document).scrollTop();
-//   $('li>a').each(function () {
-//       var currLink = $(this);
-//       var refElement = $(currLink.attr("href"));
-//       if (refElement.offset().top  - 300 <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
-//           $('li>a.active').removeClass("active");
-//           currLink.addClass("active");
-//       }
-//       else{
-//           currLink.removeClass("active");
-//       }
-//   });
-//   }
-//   $(document).ready(function () {
-//       $(document).on("scroll", onScroll);
-//   }); 
-
-
-
-
-
-
-// var scrollToSection = function (sectionID) {
-//   $('html, body').animate({ scrollTop: $(sectionID).offset().top - 175 }, 'slow'); 
-//   e.preventDefault(); 
-// }
-// if ($('.swiper-wrapper').length) { 
-//     $('.swiper-wrapper a').on('click', function (e) { e.preventDefault(); 
-// if (!$(this).hasClass('active')) 
-//   { var sectionID = $(this).attr('href');
-//    scrollToSection(sectionID); } }); 
-// }
-
-
-
-
 
 if ($('.swiper-section').length) {
-  var adminMenuHeight = 0; var stickyNavElement = $('.swiper-section'); var stickyNavTop = stickyNavElement.offset().top;
-  //  if ($('body.admin-menu').length) { adminMenuHeight = 21; } 
+  var adminMenuHeight = 0; 
+  var stickyNavElement = $('.swiper-section'); 
+  var stickyNavTop = stickyNavElement.offset().top;
+   if ($('body.admin-menu').length) { adminMenuHeight = 21; } 
    if ($(window).width() > 991) { var websiteHeader = $('.navbar.sticynav'); } 
    else { var websiteHeader = $('.navbar.sticynav'); } 
    
@@ -162,12 +117,16 @@ if ($('.swiper-section').length) {
   
   var activeSectionIndex = 0; 
   var changeHighlightedSection = function () {
-    for (var i = 0; i > acceleratorSections.length; i++) { 
-      if ($(window).scrollTop() - acceleratorSections[i] >= 0) 
-      { activeSectionIndex = i; } 
-    } 
-    
-    mySwiper.slideTo(activeSectionIndex); 
+    // for (var i = 0; i <= acceleratorSections.length; i++) { 
+    //   console.log(i,'foor');
+    // console.log(acceleratorSections[i] , "acceleratorSections");
+
+    //   if ($(window).scrollTop() - acceleratorSections[i] == 0) 
+    //   { activeSectionIndex = i; } 
+    // } 
+    // console.log(acceleratorSections[i] , "acceleratorSections");
+    // mySwiper.slideTo(activeSectionIndex); 
+
     var scrollPos = $(document).scrollTop();
     $('li>a').each(function () {
         var currLink = $(this);
@@ -177,6 +136,11 @@ if ($('.swiper-section').length) {
           $('.our-slider-ul li').eq(activeSectionIndex).find('a').addClass('active');
           $('li>a.active').removeClass("active");
           currLink.addClass("active");
+          // console.log(currLink[0].hash , 'currLinkhhh');
+          // console.log(currLink , 'currLink');
+
+          mySwiper.slideTo($(currLink[0].hash).index()-1, 1500 , false )
+          
         }
         else{
             currLink.removeClass("active");
