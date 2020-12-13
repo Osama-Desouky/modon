@@ -1107,6 +1107,9 @@ padding-left: 25px;
     margin-top: 25px;
     box-shadow: -16px -17px 5px #00000040
 }
+.shereek .gallery-box .shereek-image img{
+    height: 90px;
+}
 .shereek .shereek-content a{
     float: none;
     background-color: #fff;
@@ -1270,7 +1273,176 @@ margin-top: 40px;
     padding: 0;
     background: #fff;
 }
+/*  */
+/* site map */
+/*  */
+.site-map-background{
+    background-image: url(../images/bg-art.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    padding: 75px 0 0;
+    height: 496px;
+}
+/* .site-map .accordion{
+    padding:20px 0 ;
+} */
+.site-map .no-accordion li{
+  
+    border: none;
+    border-radius: 0px;
+    font: normal 16px "boldfont", arial, sans-serif;
+    padding: 17px 15px 8px 6px;
+    margin: 10px 0 20px;
+    /* -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #fff !important;
+    color: #555 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; */
+    /* -webkit-box-shadow: 0 0 5px 0px #e0e0e0; */
+    /* box-shadow: 0 0 5px 0px #e0e0e0; */
+    min-height: 60px;
+    font-size: 22px;
+    margin: 0;
+    color: #266891 !important;
+    box-shadow: none;
+    border-bottom: 1px solid #DBDBDB;
+}
+.site-map{
+    margin-top:-450px;
+    padding-bottom: 100px;
+}
+.site-map .accordion .ui-accordion-header{
+    font-size: 22px;
+    margin: 0;
+    color: #266891 !important;
+    box-shadow: none;
+    border-bottom: 1px solid #DBDBDB;
 
+}
+.accordion .ui-accordion-header .ui-accordion-header-icon:after {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 16px;
+    background: transparent url(../images/site-map/down-arr.png) no-repeat;
+    position: absolute
+}
+.accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon:after {
+    background: transparent url(../images/site-map/down-arr.png) no-repeat;
+    transform: rotate(180deg);
+    top: 0px;
+    left: 4px;
+}    
+/* .site-map .accordion .ui-accordion-header h3{
+    color: #266891;
+    font-size: 22px;
+} */
+.accordion .ui-accordion-header.ui-state-active{
+    background-color: #ffffff !important;
+    color: #266891 !important;
+}
+
+
+
+
+
+.tree-menu ul { list-style: none; }
+
+.tree-menu > ul { padding: 0; }
+
+.tree-menu a {
+  display: block;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  /* border-radius: 4px;
+  margin-bottom: 1px; */
+  color: #777777;
+  font: normal 16px "boldfont", arial, sans-serif;
+  -moz-transition: background-color 0.25s linear;
+  -webkit-transition: background-color 0.25s linear;
+  -o-transition: background-color 0.25s linear;
+  transition: background-color 0.25s linear;
+  -moz-transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.tree-menu a:hover {
+  color: #55B6DC;
+  -moz-transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+
+.tree-menu .closed > a,
+.tree-menu .opened > a {
+  /* padding-left: 24px;
+  background-position: 4px 8px; */
+  background-position:right;
+  background-repeat: no-repeat;
+}
+
+.tree-menu .level-one.closed > a{
+    background-image: url(../images/site-map/left-grey.png);
+}
+
+.tree-menu  .level-one.opened > a{
+    background-image: url(../images/site-map/down-arr.png);
+}
+.tree-menu .color-555 a{
+    color: #555555;
+}
+.tree-menu .level-one ul{
+    padding-right: 25px;
+}
+.tree-menu .level-one ul li.with-no-childs ,
+.tree-menu .level-one .with-childs ul li{
+    position: relative;
+}
+.tree-menu .level-one ul li.with-no-childs a , li.with-childs a{
+    color: #777777 !important;
+    padding-right: 35px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.tree-menu .level-one ul li.with-no-childs a::before{
+content: "";
+position: absolute;
+right: 15px;
+top: 20px;
+width: 8px;
+height: 8px;
+background-image: url(../images/site-map/blue-.png)
+}
+
+.tree-menu .level-one .with-childs.closed > a{
+    background-image: url(../images/site-map/left-blue.png);
+}
+
+.tree-menu .level-one .with-childs.opened > a{
+    background-image: url(../images/site-map/down-blue.png);
+}
+
+.tree-menu .level-one .with-childs ul li a::before{
+content: "";
+position: absolute;
+right: 15px;
+top: 20px;
+width: 8px;
+height: 8px;
+background-image: url(../images/site-map/green-ball.png)
+
+}
 /*  meeeeeeeeeeeeeeeeeedia */
 @media (min-width: 800px){
     .our-scene{
