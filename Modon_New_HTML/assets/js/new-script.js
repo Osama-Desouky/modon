@@ -39,6 +39,19 @@ $(document).ready(function () {
   });
 });
 
+// site map tree
+$(document).ready(function() {
+  $('.has-childs').ntm({
+  spoilerButtonClickMinX: 0,
+  spoilerButtonClickMaxX: 5000,
+  spoilerButtonClickMinY: 0,
+  spoilerButtonClickMaxY: 50,
+  });
+
+  
+});
+
+
 // e-service-details sticky nav slider  
 var mySwiper = new Swiper('.swipee-container', {
   // Optional parameters
@@ -128,16 +141,17 @@ if ($('.swiper-section').length) {
     // mySwiper.slideTo(activeSectionIndex); 
 
     var scrollPos = $(document).scrollTop();
-    $('li>a').each(function () {
+    $('li.swiper-slide>a').each(function () {
         var currLink = $(this);
+        console.log(currLink ,'currLink');
         var refElement = $(currLink.attr("href"));
         if (refElement.offset().top  - 300 <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
           $('.our-slider-ul a.active').removeClass('active');
           $('.our-slider-ul li').eq(activeSectionIndex).find('a').addClass('active');
-          $('li>a.active').removeClass("active");
+          $('li.swiper-slide>a.active').removeClass("active");
           currLink.addClass("active");
           // console.log(currLink[0].hash , 'currLinkhhh');
-          // console.log(currLink , 'currLink');
+          // console.log(refElement , 'refElement');
 
           mySwiper.slideTo($(currLink[0].hash).index()-1, 1500 , false )
           
